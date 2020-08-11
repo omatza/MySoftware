@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    }
+
 
     stages {
         stage('Clone') {
@@ -12,10 +12,9 @@ pipeline {
 
         stage('Build') {
             steps {
-                // Run Maven on a Unix agent.
+                // Run python on windows agent.
                 bat 'python NewScreen.py'
-
-
+			}
         }
     }
 }
