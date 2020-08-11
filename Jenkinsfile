@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run python on windows agent.
-                bat 'python NewScreen.py'
+                bat 'C:\Users\admin_jenkins>C:\Xilinx\Vivado\2019.1\tps\win64\python-2.7.5\python.exe NewScreen.py'
 			}
         }
     }
